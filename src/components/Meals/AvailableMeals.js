@@ -15,7 +15,7 @@ const AvailableMeals = () => {
       const response = await fetch(
         "https://food-ordering-app-df5ad-default-rtdb.firebaseio.com/meals.json"
       ); //добавляем meals.json к ссылке, чтобы обратиться к нужной информации
-      console.log(response);
+
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
